@@ -13,10 +13,9 @@
 				"foam.foam-vscode",
 				"bierner.github-markdown-preview",
 				"github.vscode-github-actions",
-				"mhutchie.git-graph",
 				"yzhang.markdown-all-in-one"
 			]
 		}
 	},
-	"updateContentCommand": "chezmoi init prulloac && chezmoi apply"
+	"postStartCommand": "chezmoi init prulloac && chezmoi apply"
 }
