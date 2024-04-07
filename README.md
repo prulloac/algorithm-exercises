@@ -1,4 +1,4 @@
-# README
+# Algorithm Exercises
 
 ## LeetCode
 

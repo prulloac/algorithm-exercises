@@ -1,0 +1,35 @@
+{
+	"name": "Universal",
+	"image": "ghcr.io/prulloac/base-devcontainer:latest",
+	"features": {
+		"ghcr.io/prulloac/devcontainer-features/chezmoi:1": {},
+		"ghcr.io/devcontainers-contrib/features/zig:1": {},
+		"ghcr.io/prulloac/devcontainer-features/bun:1": {
+			"useNpm": true
+		},
+		"ghcr.io/devcontainers/features/rust:1": {},
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "latest",
+			"installJupyterlab": true
+		},
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": 21,
+			"installMaven": true
+		},
+		"ghcr.io/devcontainers/features/go": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"GitHub.copilot-labs",
+				"foam.foam-vscode",
+				"bierner.github-markdown-preview",
+				"github.vscode-github-actions",
+				"yzhang.markdown-all-in-one"
+			]
+		}
+	},
+	"postStartCommand": "chezmoi init prulloac && chezmoi apply"
+}
