@@ -1,6 +1,6 @@
 {
 	"name": "Python",
-	"image": "ghcr.io/prulloac/base-devcontainer:latest",
+	"image": "ghcr.io/prulloac/base-debian-devcontainer:latest",
 	"features": {
 		"ghcr.io/prulloac/devcontainer-features/chezmoi:1": {},
 		"ghcr.io/devcontainers/features/python:1": {
